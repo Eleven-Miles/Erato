@@ -17,8 +17,7 @@ const Burger = () => {
         <button
             className={`burger ${appContext.openNav ? `active` : ''}`}
             onClick={() => handleSetOpenNav()}
-            type="button"
-        >
+            type="button">
             <div />
             <div />
             <div />

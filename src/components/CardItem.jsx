@@ -15,8 +15,7 @@ const CardItem = ({ item }) => {
                 {item.cta && (
                     <Link
                         className="button button--text button--with-icon-right"
-                        to={item.cta}
-                    >
+                        to={item.cta}>
                         {item.cta_label}
                         <Icon icon="chevronright" width="16px" />
                     </Link>

@@ -1,10 +1,10 @@
 ### Erato
 
-This is a boilerplate Vite + React starter.
+This is a boilerplate Vite + React starter template.
 
-## Set Up
+## Create New Project
 
-Pull repo and run `yarn`
+Run `npx @elevenmiles/create-erato YourApp` to create a new project.
 
 ## Stack
 
@@ -14,4 +14,4 @@ To create pages, add `jsx` components in the pages directory. The pages are rout
 
 ## Context
 
-The app's state and data can be managed using React's `useContext` hook. This is set up and in as default.
+The app's state and data can be managed using React's `useContext` hook.

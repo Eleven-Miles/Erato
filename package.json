@@ -1,12 +1,10 @@
 {
-    "name": "moo-air",
-    "private": true,
-    "version": "0.0.0",
-    "type": "module",
-    "scripts": {
-        "dev": "vite",
-        "build": "vite build",
-        "preview": "vite preview"
+    "name": "@elevenmiles/create-erato",
+    "version": "1.0.0",
+    "description": "Vite + React Starter",
+    "main": "vite.config.js",
+    "bin": {
+        "erato": "bin/cli.js"
     },
     "dependencies": {
         "@glidejs/glide": "^3.6.0",
@@ -25,5 +23,25 @@
         "@vitejs/plugin-react": "^3.1.0",
         "sass": "^1.60.0",
         "vite": "^4.2.0"
-    }
+    },
+    "scripts": {
+        "dev": "vite",
+        "build": "vite build",
+        "preview": "vite preview"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Eleven-Miles/Erato.git"
+    },
+    "keywords": [
+        "Vite",
+        "React",
+        "Eleven Miles"
+    ],
+    "author": "Joe Worthington",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/Eleven-Miles/Erato/issues"
+    },
+    "homepage": "https://github.com/Eleven-Miles/Erato#readme"
 }

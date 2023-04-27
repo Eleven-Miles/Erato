@@ -1,0 +1,40 @@
+.slider {
+    .glide {
+        &__slide-image {
+            width: 100%;
+            height: 250px;
+
+            @media (min-width: 800px) {
+                height: 500px;
+            }
+        }
+
+        &__slides {
+            &.disable {
+                pointer-events: none;
+            }
+        }
+
+        &__arrow {
+            position: absolute;
+
+            &--prev,
+            &--next {
+                cursor: pointer;
+                top: 50%;
+                transform: translateY(-50%);
+                position: absolute;
+                img {
+                    width: 35px;
+                }
+            }
+
+            &--prev {
+                left: 5px;
+            }
+            &--next {
+                right: 5px;
+            }
+        }
+    }
+}

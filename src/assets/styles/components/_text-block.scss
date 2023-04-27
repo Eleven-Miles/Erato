@@ -1,0 +1,13 @@
+.text-block {
+    * + * {
+        margin-top: var(--gutter-width);
+    }
+
+    &__wrapper {
+        width: 100%;
+
+        @media (min-width: 800px) {
+            width: 66%;
+        }
+    }
+}

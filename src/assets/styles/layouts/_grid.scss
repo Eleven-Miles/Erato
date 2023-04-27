@@ -1,0 +1,8 @@
+.grid {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(
+        auto-fill,
+        minmax(calc(max(250px, (100% / #{var(--itemCount)}) - 30px)), 1fr)
+    );
+}

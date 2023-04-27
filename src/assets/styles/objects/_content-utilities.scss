@@ -1,0 +1,25 @@
+.content-section {
+    padding-bottom: var(--section-margin);
+    padding-top: var(--section-margin);
+
+    .inner-content {
+        margin-top: calc(var(--section-margin) / 2);
+    }
+
+    &--reduced-padding {
+        padding-bottom: calc(var(--section-margin) / 2);
+        padding-top: calc(var(--section-margin) / 2);
+    }
+
+    &--reduced-padding-bottom {
+        padding-bottom: calc(var(--section-margin) / 2);
+    }
+
+    &--reduced-padding-top {
+        padding-top: calc(var(--section-margin) / 2);
+    }
+
+    &--no-padding {
+        padding: 0;
+    }
+}

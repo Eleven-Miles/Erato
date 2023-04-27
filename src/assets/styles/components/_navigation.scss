@@ -1,0 +1,13 @@
+.navigation {
+    &__item {
+        text-transform: uppercase;
+        font-family: var(--circularBold);
+        color: var(--white);
+        margin-bottom: 20px;
+
+        @media (min-width: 800px) {
+            margin-bottom: 0;
+            margin-left: 20px;
+        }
+    }
+}

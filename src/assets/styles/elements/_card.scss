@@ -1,0 +1,114 @@
+.card {
+    position: relative;
+    border-radius: 12px;
+    border: 1px solid var(--grey);
+
+    &--small {
+        height: 280px;
+        width: 100%;
+
+        .card {
+            &__bg-img {
+                width: 100%;
+            }
+
+            &__content {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+
+                .button {
+                    color: var(--white);
+                }
+
+                svg path {
+                    fill: var(--white);
+                }
+            }
+        }
+    }
+
+    &--large {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+
+        @media (min-width: 800px) {
+            height: 350px;
+            flex-direction: row-reverse;
+        }
+
+        .card {
+            &__bg-img {
+                width: 100%;
+
+                border-radius: 12px 12px 0 0;
+
+                @media (min-width: 800px) {
+                    flex-direction: row-reverse;
+                    border-radius: 12px 0 0 12px;
+                    width: 50%;
+                }
+            }
+
+            &__content {
+                width: 100%;
+                border-radius: 0 0 12px 12px;
+                border: 1px solid var(--grey);
+
+                @media (min-width: 800px) {
+                    width: 50%;
+                    border-radius: 0 12px 12px 0;
+                }
+
+                .button {
+                    color: var(--black);
+                }
+
+                svg path {
+                    fill: var(--black);
+                }
+            }
+
+            &__header {
+                color: var(--black);
+            }
+        }
+    }
+
+    &__bg-img {
+        border-radius: 12px;
+    }
+
+    &__content {
+        padding: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    &__image {
+        width: 100%;
+        object-fit: cover;
+        max-height: 180px;
+        border-top-right-radius: 12px;
+        border-top-left-radius: 12px;
+    }
+
+    &__header {
+        color: var(--white);
+        text-transform: uppercase;
+        font-size: 16px;
+        margin: 0 0 14px 0;
+
+        @media (min-width: var(--mobileBreakpoint)) {
+            font-size: 20px;
+        }
+    }
+
+    &__intro {
+        margin: 0 0 14px 0;
+    }
+}

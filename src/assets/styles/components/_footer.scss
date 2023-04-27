@@ -1,0 +1,23 @@
+.site-footer {
+    flex-shrink: 0;
+    background-color: var(--black);
+
+    &__layout {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__logo {
+        width: 90px;
+    }
+
+    &__social {
+        display: flex;
+        align-items: center;
+
+        svg {
+            margin-left: 20px;
+        }
+    }
+}

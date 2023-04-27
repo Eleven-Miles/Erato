@@ -1,0 +1,33 @@
+.site-page {
+    position: relative;
+    flex: 1 0 auto;
+
+    &__about,
+    &__home,
+    &__moo {
+        background-color: var(--white);
+        height: 100%;
+    }
+
+    &-enter {
+        opacity: 0;
+        transform: scale(0.9);
+
+        &-active {
+            opacity: 1;
+            transform: scale(1);
+            transition: opacity 300ms, transform 300ms;
+        }
+    }
+
+    &-exit {
+        opacity: 1;
+        transform: scale(1);
+
+        &-active {
+            opacity: 0;
+            transform: scale(0.9);
+            transition: opacity 300ms, transform 300ms;
+        }
+    }
+}

@@ -15,3 +15,9 @@ To create pages, add `jsx` components in the pages directory. The pages are rout
 ## Context
 
 The app's state and data can be managed using React's `useContext` hook.
+
+## Tests
+
+Create a test in `components/tests/ComponentName.test.jsx`.
+
+Run `yarn test`.

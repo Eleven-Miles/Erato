@@ -1,6 +1,5 @@
 import { createContext, useState } from 'react';
 import logo from '../assets/svgs/logo.svg';
-import footerLogo from '../assets/pngs/footer-logo.png';
 import { dummyContent } from './dummyContent';
 const AppContext = createContext([
     {
@@ -17,7 +16,7 @@ const AppContextProvider = (props) => {
         openNav: false,
         content: {
             logo: logo,
-            footerLogo: footerLogo,
+            footerLogo: logo,
             home: dummyContent,
             about: dummyContent,
         },

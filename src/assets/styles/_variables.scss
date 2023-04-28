@@ -1,4 +1,5 @@
 :root {
+    // Colours
     --blue: #1136fe;
     --yellow: #ffe699;
     --pink: #e384d8;
@@ -8,9 +9,13 @@
     --beige: #fef3ee;
     --white: #ffffff;
     --grey: #cccccc;
+
+    // Fonts
     --circularBook: 'CircularStd-Book', sans-serif;
     --circularBold: 'CircularStd-Bold', sans-serif;
     --circularBlack: 'CircularStd-Black', sans-serif;
+
+    // Box Sizing
     --mobileBreakpoint: 350px;
     --gutter-width: 1rem;
     --section-margin: 3rem;

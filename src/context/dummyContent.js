@@ -1,6 +1,4 @@
-import logo from '../assets/svgs/logo.svg';
 import heroImg from '../assets/pngs/hero-img.png';
-import heroImgTwo from '../assets/pngs/hero-img-2.png';
 import cardBg from '../assets/pngs/card-bg.png';
 import imageSmall from '../assets/pngs/image-small.png';
 import imageLarge from '../assets/pngs/image-large.png';

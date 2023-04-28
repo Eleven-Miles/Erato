@@ -1,11 +1,11 @@
 function TextBlock({ data }) {
+    const { title, content } = data;
     return (
         <div className="text-block__wrapper">
-            {data.title && <h2 className="text--black">{data.title}</h2>}
+            {title && <h2 className="text--black">{title}</h2>}
             <div
                 className="text--black"
-                dangerouslySetInnerHTML={{ __html: data.content }}
-            ></div>
+                dangerouslySetInnerHTML={{ __html: content }}></div>
         </div>
     );
 }

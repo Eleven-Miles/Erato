@@ -1,11 +1,13 @@
+@import '../variables.scss';
+
 .text {
     &--black {
-        color: var(--black);
+        color: $black;
     }
     &--pink {
-        color: var(--pink);
+        color: $pink;
     }
     &--white {
-        color: var(--white);
+        color: $white;
     }
 }

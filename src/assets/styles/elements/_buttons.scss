@@ -1,25 +1,22 @@
+@import '../mixins.scss';
+@import '../variables.scss';
+
 .button {
-    background-color: var(--pink);
-    color: var(--white);
+    background-color: $pink;
+    color: $white;
     border: 0;
-    border-radius: 12px;
+    border-radius: toRem(12);
     display: inline-block;
-    padding: 17px 30px 16px 30px;
-    font-size: 16px;
+    padding: toRem(17) toRem(30) toRem(17) toRem(30);
+    font-size: toRem(16);
     line-height: 1.2;
-    font-family: var(--circularBook);
     font-weight: 900;
     text-transform: uppercase;
-    margin-bottom: 3px;
+    margin-bottom: toRem(3);
     cursor: pointer;
     text-align: center;
     text-decoration: none;
     transition: background-color 0.5s, color 0.5s, border 0.5s;
-
-    &:active,
-    &:hover,
-    &:focus {
-    }
 
     &--disabled {
         opacity: 0.75;
@@ -27,7 +24,7 @@
         &:active,
         &:hover,
         &:focus {
-            background-color: var(--yellow);
+            background-color: $blue;
         }
     }
 
@@ -51,7 +48,7 @@
             svg {
                 vertical-align: middle;
                 transition: all 0.3s ease-in-out;
-                margin-right: 13px;
+                margin-right: toRem(13);
             }
 
             &:active,
@@ -67,7 +64,7 @@
             svg {
                 vertical-align: middle;
                 transition: all 0.3s ease-in-out;
-                margin-left: 13px;
+                margin-left: toRem(13);
             }
 
             &:active,
@@ -78,5 +75,13 @@
                 }
             }
         }
+    }
+
+    &--link-cover {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
     }
 }

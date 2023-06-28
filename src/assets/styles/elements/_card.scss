@@ -1,7 +1,10 @@
+@import '../mixins.scss';
+@import '../variables.scss';
+
 .card {
     position: relative;
     border-radius: 12px;
-    border: 1px solid var(--grey);
+    border: 1px solid $grey;
 
     &--small {
         height: 280px;
@@ -18,11 +21,11 @@
                 height: 100%;
 
                 .button {
-                    color: var(--white);
+                    color: $white;
                 }
 
                 svg path {
-                    fill: var(--white);
+                    fill: $white;
                 }
             }
         }
@@ -55,7 +58,7 @@
             &__content {
                 width: 100%;
                 border-radius: 0 0 12px 12px;
-                border: 1px solid var(--grey);
+                border: 1px solid $grey;
 
                 @media (min-width: 800px) {
                     width: 50%;
@@ -63,16 +66,16 @@
                 }
 
                 .button {
-                    color: var(--black);
+                    color: $black;
                 }
 
                 svg path {
-                    fill: var(--black);
+                    fill: $black;
                 }
             }
 
             &__header {
-                color: var(--black);
+                color: $black;
             }
         }
     }
@@ -98,12 +101,12 @@
     }
 
     &__header {
-        color: var(--white);
+        color: $white;
         text-transform: uppercase;
         font-size: 16px;
         margin: 0 0 14px 0;
 
-        @media (min-width: var(--mobileBreakpoint)) {
+        @media (min-width: $mobileBreakpoint) {
             font-size: 20px;
         }
     }

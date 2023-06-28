@@ -1,13 +1,40 @@
+@import '../mixins.scss';
+
 .navigation {
     &__item {
+        position: relative;
         text-transform: uppercase;
-        font-family: var(--circularBold);
-        color: var(--white);
-        margin-bottom: 20px;
+        font-size: toRem(30);
+        font-weight: 500;
+        color: $white;
+        margin-bottom: toRem(20);
+
+        @media (min-width: $mobileBreakpoint) {
+            font-size: toRem(20);
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            background: $white;
+            height: toRem(2);
+            left: 0;
+            bottom: toRem(-3);
+            width: 0%;
+            display: inline-block;
+            transition: all 0.3s ease-in-out;
+        }
 
         @media (min-width: 800px) {
             margin-bottom: 0;
-            margin-left: 20px;
+            margin-left: toRem(40);
+        }
+
+        &.current,
+        &:hover {
+            &::after {
+                width: 100%;
+            }
         }
     }
 }

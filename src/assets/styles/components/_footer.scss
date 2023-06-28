@@ -1,6 +1,9 @@
+@import '../mixins.scss';
+@import '../variables.scss';
+
 .site-footer {
     flex-shrink: 0;
-    background-color: var(--black);
+    background-color: $black;
 
     &__layout {
         display: flex;
@@ -17,7 +20,7 @@
         align-items: center;
 
         svg {
-            margin-left: 20px;
+            margin-left: toRem(20);
         }
     }
 }

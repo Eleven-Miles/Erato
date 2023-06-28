@@ -1,9 +1,11 @@
+@import '../mixins.scss';
+
 .burger {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    width: 2rem;
-    height: 2rem;
+    width: toRem(40);
+    height: toRem(40);
     background: transparent;
     border: none;
     cursor: pointer;
@@ -15,10 +17,10 @@
     }
 
     div {
-        width: 2rem;
+        width: toRem(40);
         height: 0.25rem;
-        background: var(--blue);
-        border-radius: 10px;
+        background: $white;
+        border-radius: toRem(10);
         transition: all 0.3s linear;
         position: relative;
         transform-origin: 1px;
@@ -44,7 +46,7 @@
 
             &:nth-child(2) {
                 opacity: 0;
-                transform: translateX(20px);
+                transform: translateX(#{toRem(20)});
             }
 
             &:nth-child(3) {

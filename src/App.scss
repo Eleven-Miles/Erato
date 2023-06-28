@@ -1,6 +1,7 @@
 @import 'normalize.css';
 @import 'node_modules/@glidejs/glide/src/assets/sass/glide.core';
-@import './src/assets/styles/_variables.scss';
+@import './assets/styles/_mixins.scss';
+@import './assets/styles/_variables.scss';
 @import './src/assets/styles/components';
 @import './src/assets/styles/elements';
 @import './src/assets/styles/settings';
